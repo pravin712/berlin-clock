@@ -44,5 +44,14 @@ RRRR
 OOOOOOOOOOO
 OOOO
 
+Scenario: Invalid hours
+When the time is 24:12:01
+Then the clock should look like
+
+
+Scenario: Invalid time
+When the time is 0712:01
+Then the clock should look like
+
 
 
